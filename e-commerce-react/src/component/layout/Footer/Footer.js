@@ -1,33 +1,33 @@
-import React from 'react'
+import React from "react";
+import playStore from "../../../images/playstore.png";
+import appStore from "../../../images/Appstore.png";
+import "./Footer.css";
 
-import playStore from "../../../images/playstore.png"
-import appStore from "../../../images/Appstore.png"
-import "./Footer.css"
-function Footer() {
+const Footer = () => {
   return (
-    <footer id='footer'>
+    <footer id="footer">
+      <div className="leftFooter">
+        <h4>DOWNLOAD OUR APP</h4>
+        <p>Download App for Android and IOS mobile phone</p>
+        <img src={playStore} alt="playstore" />
+        <img src={appStore} alt="Appstore" />
+      </div>
 
-        <div class ="leftFooter">
-            <h4>DOWNLOAD OUR APP</h4>
-            <p>Download App for Android and IOS mobile phone </p>
-            <img src={playStore} alt='playstore'/>
-            <img src={appStore} alt='Appstore'/>
-        </div>
+      <div className="midFooter">
+        <h1>ECOMMERCE.</h1>
+        <p>High Quality is our first priority</p>
 
-        <div class ="midFooter">
-            <h1>ECOMMERCE</h1>
-            <p>High Quality is our first priority</p>
-            <p>Copyrights 2023 &copy; AkhileshSoni </p>
-</div>
+        <p>Copyrights 2023 &copy; akhileshSoni</p>
+      </div>
 
-<div class ="rightFooter">
-    <h4>Follow Us</h4>
-    <a href='https://www.linkedin.com/in/akhilesh-soni-09218716b/'>Linkldln</a>
-    <a href='https://www.linkedin.com/in/akhilesh-soni-09218716b/'>Linkldln</a>
-    <a href='https://www.linkedin.com/in/akhilesh-soni-09218716b/'>Linkldln</a>
-        </div>
+      <div className="rightFooter">
+        <h4>Follow Us</h4>
+        <a href="http://instagram.com">Instagram</a>
+        <a href="http://youtube.com">Youtube</a>
+        <a href="http://facebook.com">Facebook</a>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
